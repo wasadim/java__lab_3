@@ -1,24 +1,18 @@
-
-        /* zad.3
-            a) W klasie Main stworzyć 5 różnych studentów, (można za pomocą tego samego objektu)
-            b) dodać studentów do Listy ArrayList,
-            c) przeiterować listę za pomocą pętli forEach wywołując na każdym objekcie metodę toString() (w każdej iteracji);
-         */
-
-import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
+        /* ćw 5 Dziedziczenie */
 
-        ArrayList<Student> studenci = new ArrayList<Student>(); 
-        studenci.add(new Student(new Osoba("Karol", "Frankowski", 666666), WydzialEnum.INFORMATYKA));
-        studenci.add(new Student(new Osoba("Adam", "Kowalski", 666667), WydzialEnum.ADMINISTRACJA));
-        studenci.add(new Student(new Osoba("Adam", "Kowalski", 666668), WydzialEnum.ZARZADZANIE));
-        studenci.add(new Student(new Osoba("Adam", "Kowalski", 666669), WydzialEnum.MEDYCYNA));
-        studenci.add(new Student(new Osoba("Adam", "Kowalski", 666670), WydzialEnum.INFORMATYKA));
+        /* zad.1 Proszę wybrać dowolny temat budowania struktur klas np. samochody, dom, biblioteka, nauka, zabawki, kosmetyki, biuro podróży ... .
+                 Będziemy budować podobną strukturę kodu jak w przykładzie 5,
+            a) Proszę stworzyć układ klas dziedziczących po sobie,
+            b) proszę użyć pól i metod protected jak i private,
+            c) proszę stworzyć konstruktory, metody: toString(), settery i gettery,
+            d) proszę używać super do wywołania konstruktorów i metod z klas nadrzędnych
+            (można wygenerować je --> prawy przycisk myszki --> generate --> settery, gettery, ...),
+            e) w klasie Main proszę stworzyć objekty podobnie jak w przykładzie 5,
+            oraz stworzyć listę typu najbardziej generycznego np. List<Budynek>
+         */
 
-        for (Student student : studenci) {
-            System.out.println(student.toString());
-        }
     }
 }

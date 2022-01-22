@@ -7,21 +7,21 @@
     d) nadpisać metodę toString aby zwracała wszystkie elementy ładnie przedstawione :)
     */
 public class Student {
-    Osoba osoba;
+    Pomieszczenie osoba;
     WydzialEnum wydzial;
 
     public Student(){
 
     }
-    public Student(Osoba osoba, WydzialEnum wydzial){
+    public Student(Pomieszczenie osoba, WydzialEnum wydzial){
         this.osoba = osoba;
         this.wydzial = wydzial;
     }
 
-    public void setOsoba(Osoba osoba){
+    public void setOsoba(Pomieszczenie osoba){
         this.osoba = osoba;
     }
-    public Osoba getOsoba(){
+    public Pomieszczenie getOsoba(){
         return this.osoba;
     }
     public void setWydzial(WydzialEnum wydzial){
